@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body style="background-image: url(/nav.jpg);">
+    <nav>
+        <div class="navbar" style="justify-content: space-evenly;">
+            <div class="logo">
+                <img src="/logo.png" alt="">
+            </div>
+            <div class="titles">
+                <ul>
+                    <li><a href="/?q=daily&pageno=1">Home</a></li>
+                    <li><a href="/?q=weather&pageno=1">Weather</a></li>
+                    <li><a href="/?q=sports&pageno=1">Sports</a></li>
+                    <li><a href="/?q=india&pageno=1">India</a></li>
+                    <li><a href="/?q=gaming&pageno=1">Gaming</a></li>
+                </ul>
+            </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" name="query" type="search" placeholder="Search" aria-label="Search" id="searchbox">
+                    <input class="form-control me-2" name="pageno" type="hidden" value="1" placeholder="Search" aria-label="Search" id="searchbox">
+                    <button class="btn btn-outline-success" type="submit" id="btn">Search</button>
+                </form>
+        </div>
+    </nav>
+
+    <div class="card-containers" id="cardContent">
+        <div class="loading">
+            <h1>Loading.....</h1>
+            <img src="/1488.gif" alt="">
+        </div>
+    </div>
+
+    <div class="prevNext">
+        <ul class="pagination">
+            <li class="page-item"><a id="prev" class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a id="next" class="page-link" href="#">Next</a></li>
+        </ul>
+    </div>
+
+    <script src="/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

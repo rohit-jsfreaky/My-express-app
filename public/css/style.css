@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  background-image: url(/nav.jpg);
+  height: 10vh;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo img {
+  height: 7vh;
+}
+
+
+.titles ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.titles ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px rgb(235, 233, 233);
+  color: rgba(128, 128, 128, 0.552)
+}
+
+
+.main { 
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-containers{
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+}
+
+.card-content {
+  height: 350px;
+  width: 250px;
+  /* background-color: red; */
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.card-img {
+  /* background-color: black; */
+  height: 140px;
+  width: 100%;
+  position: relative;
+}
+
+.card-img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-desc {
+  height: 100px;
+  /* background-color: black; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-desc p {
+  text-overflow: ellipsis;
+}
+
+
+
+.card-title h1{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-title h1{
+  font-size: 20px;
+}
+
+.readMore {
+  display: flex;
+  justify-content: center;
+}
+
+
+.button-34 {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.prevNext{
+  display: flex;
+  justify-content: center;
+}
