@@ -139,3 +139,7 @@ nav {
   display: flex;
   justify-content: center;
 }
+
+.button-34 >a{
+color: white;
+}

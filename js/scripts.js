@@ -49,7 +49,7 @@ const fetchNews = async (query="all", pageNo=1) => {
             <p>${item.description}</p>
         </div>
         <div class="readMore">
-            <button class="button-34" role="button"><a target="_blank" href="${item.url}"></a></button>
+            <button class="button-34" role="button"><a target="_blank" href="${item.url}">Read More</a></button>
         </div>
     </div>`
 
